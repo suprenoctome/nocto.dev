@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+$primaryColor: #111;
+$secondaryColor: #eca400;
+$thirdColor: #222;
+$fourthColor: #333;
+$textColor: white;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $primaryColor;
+}
+
+
+p {
+    margin: 15px 0;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.content {
+    background-color: $thirdColor;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    .ascii-art {
+        white-space: pre;
+        font-family: monospace;
+        line-height: 1.5;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .name {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .links {
+        text-align: center;
+        padding-top: 20px;
+        .buttons {
+            margin: 10px;
+            text-align: center;
+            button {
+                margin: 5px;
+            }
+        }
+    }
+}
+
+
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+header {
+    background: $primaryColor;
+    padding: 5px;
+    border-bottom: solid 1px $secondaryColor;
+    margin-bottom: 40px;
+}
+
+.container-header {
+    max-width: 768px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 10px;
+    h2 {
+        display: inline;
+    }
+    h4 {
+        display: inline;
+        float: right;
+        padding-top: 1%;
+    }
+}
+
+.container{
+    max-width: 768px;
+    min-height: 800px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: $secondaryColor;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: inherit;
+    color: #000;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+@media (max-width: 500px) {
+  .ascii-art {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+    .ascii-art {
+      font-size: 8px;
+    }
+}
+
+@media (max-width: 300px) {
+    * {
+        font-size: 95%;
+    }
+
+    .ascii-art {
+      font-size: 6px;
+    }
+
+    .btn {
+        padding: 4px 8px;
+        font-size: 95%;
+    }
+    
+}
